@@ -34,7 +34,7 @@
         height: 200px;
         object-fit: cover;
       }
-      /* Custom badge high contrast (WCAG 2 AA Compliant) */
+      /* Custom high-contrast badges (WCAG 2 AA Compliant) */
       .badge-ai-primary { background-color: #0369a1; color: #ffffff; }
       .badge-ai-neutral { background-color: #334155; color: #ffffff; }
       .badge-ai-success { background-color: #047857; color: #ffffff; }
@@ -42,7 +42,7 @@
       .badge-ai-danger  { background-color: #b91c1c; color: #ffffff; }
     </style>
   </head>
-  <body class="bg-light">
+  <body class="bg-light d-flex flex-column min-vh-100">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
       <div class="container">
@@ -96,7 +96,7 @@
     </header>
 
     <!-- BLOG LIST -->
-    <main class="py-5">
+    <main class="py-5 flex-grow-1">
       <div class="container">
         <div class="row g-4">
           <!-- Item 1 -->
@@ -113,7 +113,7 @@
                   <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Enterprise RAG</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
-                  <a href="blog-detail.html" class="text-decoration-none text-dark">
+                  <a href="blog-detail.html" class="text-decoration-underline text-dark">
                     Mengoptimalkan Arsitektur RAG untuk Menghapus Halusinasi Model AI
                   </a>
                 </h2>
@@ -146,7 +146,7 @@
                   <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Manufaktur</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
-                  <a href="blog-detail.html" class="text-decoration-none text-dark">
+                  <a href="blog-detail.html" class="text-decoration-underline text-dark">
                     Implementasi Vision AI pada Jalur Produksi Otomatisasi Pabrik
                   </a>
                 </h2>
@@ -178,7 +178,7 @@
                   <span class="badge badge-ai-warning px-3 py-1.5 rounded-pill">Predictive AI</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
-                  <a href="blog-detail.html" class="text-decoration-none text-dark">
+                  <a href="blog-detail.html" class="text-decoration-underline text-dark">
                     Peramalan Churn Pelanggan dengan Ensemble Gradient Boosting
                   </a>
                 </h2>
@@ -210,7 +210,7 @@
                   <span class="badge badge-ai-danger px-3 py-1.5 rounded-pill">Tata Kelola &amp; Etika</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
-                  <a href="blog-detail.html" class="text-decoration-none text-dark">
+                  <a href="blog-detail.html" class="text-decoration-underline text-dark">
                     Panduan Kepatuhan Regulasi AI Act dan Keamanan Data Korporat
                   </a>
                 </h2>
@@ -242,14 +242,14 @@
       </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white py-4 mt-auto border-top border-secondary">
-      <div class="container text-center small text-light">
-        <p class="mb-1 text-light">© 2026 DelAI Studio &bull; Risky Kevin Naibaho &bull; Bootstrap 5 Module.</p>
-        <div>
-          <a href="index.html" class="text-light text-decoration-none me-3">Landing Page</a>
-          <a href="cv.html" class="text-light text-decoration-none">CV Profil</a>
-        </div>
+    <!-- FOOTER (WCAG link-in-text-block compliant) -->
+    <footer class="bg-dark text-white py-4 mt-auto border-top border-secondary text-center small">
+      <div class="container">
+        <p class="mb-2 text-light">© 2026 DelAI Studio &bull; Risky Kevin Naibaho &bull; Bootstrap 5 Module.</p>
+        <nav aria-label="Navigasi Footer">
+          <a href="index.html" class="text-info text-decoration-underline me-3">Landing Page</a>
+          <a href="cv.html" class="text-info text-decoration-underline">CV Profil</a>
+        </nav>
       </div>
     </footer>
 
