@@ -7,8 +7,7 @@
       name="description"
       content="Curriculum Vitae dan portofolio Risky Kevin Naibaho - Mahasiswa Informatika Institut Teknologi Del."
     />
-    <title>Curriculum Vitae — Risky Kevin Naibaho</title>
-    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+    <title>Curriculum Vitae — Risky Kevin Naibaho | DelAI Studio</title>
 
     <!-- Tailwind CSS v4 Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -19,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
     />
 
-    <!-- Tailwind v4 @theme (WCAG 2 AA Compliant) -->
+    <!-- Tailwind v4 @theme -->
     <style type="text/tailwindcss">
       @theme {
         --color-brand: #0369a1;
@@ -32,15 +31,15 @@
     </style>
   </head>
   <body class="bg-slate-100 text-slate-800 antialiased font-sans min-h-screen flex flex-col">
-    <!-- NAVBAR INTEGRASI -->
+    <!-- NAVBAR INTEGRASI (Konsisten dengan DelAI Studio) -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="cv.html" class="flex items-center gap-2 font-bold text-lg text-brand">
-          <i class="ti ti-id-badge-2 text-2xl" aria-hidden="true"></i>
-          <span>Digital<span class="text-slate-900">CV</span></span>
+        <a href="index.html" class="flex items-center gap-2 font-bold text-lg text-brand">
+          <i class="ti ti-cpu text-2xl" aria-hidden="true"></i>
+          <span>DelAI<span class="text-slate-900">Studio</span></span>
         </a>
 
-        <nav class="flex items-center gap-3 text-sm font-medium" aria-label="Navigasi Utama">
+        <nav class="flex items-center gap-4 text-sm font-medium" aria-label="Navigasi Utama">
           <a href="index.html" class="text-slate-700 hover:text-brand transition flex items-center gap-1 font-semibold">
             <i class="ti ti-home" aria-hidden="true"></i> Landing Page
           </a>
@@ -48,7 +47,7 @@
             <i class="ti ti-article" aria-hidden="true"></i> Blog AI
           </a>
           <a href="index.html#kontak" class="hidden sm:inline-flex bg-brand text-white px-3.5 py-1.5 rounded-full font-bold hover:bg-brand-dark transition">
-            Kontak Saya
+            Kontak
           </a>
         </nav>
       </div>
@@ -62,13 +61,11 @@
         <aside class="md:col-span-1 space-y-6">
           <!-- Card Profil Pokok -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-600 p-1 shadow-md mb-4 overflow-hidden">
-              <img
-                src="risky.jpg"
-                alt="Foto Profil Risky Kevin Naibaho"
-                class="w-full h-full object-cover rounded-full bg-slate-200"
-                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Risky+Kevin+Naibaho&background=0369a1&color=fff&size=200';"
-              />
+            <!-- Avatar Visual Aman -->
+            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-600 p-1 shadow-md mb-4 flex items-center justify-center">
+              <div class="w-full h-full bg-slate-100 rounded-full flex items-center justify-center text-3xl font-extrabold text-brand">
+                RKN
+              </div>
             </div>
             
             <h1 class="text-xl font-bold text-slate-900 leading-tight">Risky Kevin Naibaho</h1>
@@ -155,8 +152,36 @@
               <i class="ti ti-user-check text-brand text-xl" aria-hidden="true"></i> Tentang Saya
             </h2>
             <p class="text-slate-700 text-sm leading-relaxed">
-              Saya adalah seorang mahasiswa Informatika di Institut Teknologi Del yang memiliki minat kuat dalam rekayasa perangkat lunak, khususnya pengembangan aplikasi berbasis Web dan Mobile. Berpengalaman dalam menggunakan berbagai bahasa pemrograman dan framework modern untuk merancang solusi sistem yang terstruktur, efisien, dan inovatif.
+              Saya adalah seorang mahasiswa Informatika di Institut Teknologi Del yang memiliki minat kuat dalam rekayasa perangkat lunak, khususnya pengembangan aplikasi berbasis Web dan Mobile. Berpengalaman dalam merancang dan mengimplementasikan sistem yang terstruktur, efisien, serta responsif.
             </p>
+          </section>
+
+          <!-- SECTION PENGALAMAN (Wajib - 2 Item) -->
+          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+              <i class="ti ti-briefcase text-brand text-xl" aria-hidden="true"></i> Pengalaman
+            </h2>
+            <div class="space-y-4">
+              <!-- Item Pengalaman 1 -->
+              <div class="border-l-2 border-brand pl-4">
+                <span class="text-xs font-bold text-brand">2025 - Sekarang</span>
+                <h3 class="text-sm font-bold text-slate-900">Lead Full-Stack Developer</h3>
+                <p class="text-xs text-slate-600 font-semibold mb-1">DelAI Studio Initiative</p>
+                <p class="text-xs text-slate-700">
+                  Memimpin perancangan antarmuka landing page enterprise, integrasi modul blog berbasis Bootstrap, dan manajemen state aplikasi web responsif.
+                </p>
+              </div>
+
+              <!-- Item Pengalaman 2 -->
+              <div class="border-l-2 border-slate-400 pl-4">
+                <span class="text-xs font-bold text-slate-700">2024 - 2025</span>
+                <h3 class="text-sm font-bold text-slate-900">Academic Project Member</h3>
+                <p class="text-xs text-slate-600 font-semibold mb-1">Laboratorium Komputasi IT Del</p>
+                <p class="text-xs text-slate-700">
+                  Mengembangkan RESTful API backend menggunakan HapiJS dan merancang antarmuka mobile native menggunakan Kotlin dan Android Compose.
+                </p>
+              </div>
+            </div>
           </section>
 
           <!-- Riwayat Pendidikan -->
@@ -165,14 +190,12 @@
               <i class="ti ti-school text-brand text-xl" aria-hidden="true"></i> Pendidikan
             </h2>
             <div class="space-y-4">
-              <!-- Pendidikan Tinggi -->
               <div class="border-l-2 border-brand pl-4">
                 <span class="text-xs font-bold text-brand">2024 - 2028 (Aktif)</span>
                 <h3 class="text-sm font-bold text-slate-900">Sarjana Informatika (S1)</h3>
                 <p class="text-xs text-slate-600 font-semibold">Institut Teknologi Del</p>
               </div>
 
-              <!-- Riwayat Sekolah Sebelumnya -->
               <div class="border-l-2 border-slate-300 pl-4 space-y-2">
                 <span class="text-xs font-bold text-slate-600">Pendidikan Sebelumnya</span>
                 <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside font-medium">
@@ -191,7 +214,6 @@
             </h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              <!-- Proyek 1 -->
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
                   <h3 class="font-bold text-xs text-slate-900">Forum API</h3>
@@ -201,7 +223,6 @@
                 <span class="text-[11px] font-semibold text-brand">JavaScript &bull; Backend</span>
               </div>
 
-              <!-- Proyek 2 -->
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
                   <h3 class="font-bold text-xs text-slate-900">Github Expose</h3>
@@ -211,7 +232,6 @@
                 <span class="text-[11px] font-semibold text-brand">Kotlin &bull; Android Studio</span>
               </div>
 
-              <!-- Proyek 3 -->
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
                   <h3 class="font-bold text-xs text-slate-900">Kas Tracking</h3>
@@ -221,7 +241,6 @@
                 <span class="text-[11px] font-semibold text-brand">PHP &bull; Fullstack Web</span>
               </div>
 
-              <!-- Proyek 4: Integrasi Modul Praktikum -->
               <a href="index.html" class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50 block group">
                 <div class="flex items-center justify-between mb-1.5">
                   <h3 class="font-bold text-xs text-slate-900 group-hover:text-brand">DelAI Studio Landing</h3>
