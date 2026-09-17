@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mengoptimalkan Arsitektur RAG — NovaMind Blog</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/png" />
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4" href="index.html">
+          <i class="bi bi-cpu text-info me-1"></i>Nova<span class="text-info">Mind</span> AI
+        </a>
+        <div class="ms-auto d-flex gap-2">
+          <a href="blog.html" class="btn btn-outline-light btn-sm"><i class="bi bi-arrow-left me-1"></i>Kembali ke Blog</a>
+          <a href="cv.html" class="btn btn-info btn-sm text-dark fw-semibold">CV Profil</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ARTIKEL CONTAINER -->
+    <main class="py-5">
+      <div class="container" style="max-width: 860px;">
+        <!-- Header Artikel -->
+        <header class="mb-4">
+          <div class="mb-2">
+            <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill">Generative AI</span>
+            <span class="badge bg-secondary-subtle text-secondary px-3 py-1 rounded-pill">Enterprise RAG</span>
+          </div>
+          <h1 class="display-6 fw-bold text-dark my-3">
+            Mengoptimalkan Arsitektur RAG untuk Menghapus Halusinasi Model AI Enterprise
+          </h1>
+
+          <div class="d-flex flex-wrap align-items-center gap-3 text-secondary py-2 border-top border-bottom">
+            <div><i class="bi bi-person-circle text-primary me-1"></i> <strong>Alex Rivera</strong></div>
+            <div><i class="bi bi-calendar3 me-1"></i> 14 September 2026</div>
+            <div><i class="bi bi-clock me-1"></i> Waktu baca 6 menit</div>
+          </div>
+        </header>
+
+        <!-- Cover Image -->
+        <div class="mb-4 rounded-4 overflow-hidden shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=1200&auto=format&fit=crop&q=80"
+            class="img-fluid w-100"
+            alt="RAG AI Architecture"
+          />
+        </div>
+
+        <!-- Body Artikel -->
+        <article class="bg-white p-4 p-md-5 rounded-4 shadow-sm text-secondary" style="font-size: 1.1rem; line-height: 1.8;">
+          <p>
+            Dalam era adopsi kecerdasan buatan enterprise saat ini, <em>Large Language Models</em> (LLM) sering kali menghadapi tantangan fundamental berupa <strong>halusinasi informasi</strong> dan keterbatasan akses ke data privat perusahaan. Retrieval-Augmented Generation (RAG) hadir sebagai jembatan yang menghubungkan kecerdasan penalaran model dasar dengan database pengetahuan aktual organisasi.
+          </p>
+
+          <p>
+            Membangun RAG sederhana dengan membagi teks menjadi chunk lalu melakukan pencarian kemiripan kosinus (<em>cosine similarity</em>) sering kali belum cukup memadai untuk kebutuhan regulasi ketat perbankan atau kesehatan. Di sinilah teknik optimasi lanjutan seperti <strong>Hybrid Search (Dense + Sparse/BM25)</strong> dan algoritma <strong>Cross-Encoder Reranking</strong> memegang peranan krusial.
+          </p>
+
+          <!-- Alert Info Box -->
+          <div class="alert alert-info border-0 rounded-3 my-4 d-flex align-items-start gap-3">
+            <i class="bi bi-lightbulb-fill fs-3 text-info"></i>
+            <div>
+              <h5 class="alert-heading fw-bold mb-1">Catatan Insinyur NovaMind</h5>
+              <p class="mb-0 small">
+                Pengujian internal membuktikan bahwa menambahkan langkah Cross-Encoder Reranker mampu memangkas false-positive retrieval hingga 43% dibandingkan dengan embedding mentah.
+              </p>
+            </div>
+          </div>
+
+          <h3 class="h4 fw-bold text-dark mt-4 mb-3">Tiga Pilar Utama Optimasi RAG</h3>
+          <ul class="mb-4">
+            <li><strong>Chunking Semantik Kontekstual:</strong> Memecah dokumen berdasarkan struktur heading dan makna kalimat, bukan hanya batas token statis.</li>
+            <li><strong>Filter Metadata Berjenjang:</strong> Membatasi ruang pencarian berdasarkan hak akses pengguna dan tanggal validitas dokumen.</li>
+            <li><strong>Guardrails Prompting:</strong> Memaksa model menjawab "Data tidak ditemukan" jika dokumen rujukan tidak memuat bukti yang valid.</li>
+          </ul>
+
+          <!-- Blockquote -->
+          <blockquote class="blockquote border-start border-4 border-primary ps-4 py-2 my-4 bg-light rounded-end">
+            <p class="fs-6 fst-italic text-dark mb-1">
+              "Kunci keberhasilan AI enterprise bukan pada seberapa besar parameter model Anda, melainkan seberapa bersih dan relevan data konteks yang Anda sajikan saat inferensi."
+            </p>
+            <footer class="blockquote-footer mt-1 small">Chief AI Architect NovaMind</footer>
+          </blockquote>
+
+          <p>
+            Dengan mengintegrasikan arsitektur ini secara menyeluruh, tim operasional dapat mengandalkan asisten virtual berbasis AI untuk mengambil keputusan tanpa rasa cemas terhadap data fiktif atau kebocoran dokumen konfidensial.
+          </p>
+        </article>
+
+        <!-- Area Komentar Sederhana -->
+        <section class="mt-5 bg-white p-4 p-md-5 rounded-4 shadow-sm">
+          <h3 class="h5 fw-bold text-dark mb-4">
+            <i class="bi bi-chat-left-dots text-primary me-2"></i>Tinggalkan Tanggapan / Diskusi
+          </h3>
+          <form action="#" method="get">
+            <div class="mb-3">
+              <label for="commentName" class="form-label small fw-semibold">Nama Lengkap</label>
+              <input type="text" class="form-control" id="commentName" placeholder="Tuliskan nama Anda..." required />
+            </div>
+            <div class="mb-3">
+              <label for="commentMessage" class="form-label small fw-semibold">Komentar atau Pertanyaan</label>
+              <textarea class="form-control" id="commentMessage" rows="3" placeholder="Tuliskan pandangan teknis Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary px-4 rounded-pill">
+              <i class="bi bi-send me-1"></i> Kirim Komentar
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5 border-top border-secondary text-center small text-secondary">
+      <div class="container">
+        © 2026 NovaMind AI &bull; <a href="blog.html" class="text-secondary text-decoration-none">Daftar Blog</a> &bull; <a href="index.html" class="text-secondary text-decoration-none">Beranda</a>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
