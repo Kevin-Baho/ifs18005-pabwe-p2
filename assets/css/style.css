@@ -1,5 +1,5 @@
 /* =========================================================
-   DELAI STUDIO - EXTERNAL STYLESHEET (Pure CSS)
+   DELAI STUDIO - EXTERNAL STYLESHEET (100% Pure CSS)
    ========================================================= */
 
 :root {
@@ -65,7 +65,7 @@ img {
   margin-inline: auto;
 }
 
-/* --- HEADER & NAVBAR --- */
+/* --- HEADER & CSS-ONLY NAVBAR --- */
 .site-header {
   position: sticky;
   top: 0;
@@ -99,6 +99,23 @@ img {
   color: var(--primary);
 }
 
+/* Hidden Checkbox untuk Pure CSS Toggle */
+.nav-toggle-input {
+  display: none;
+}
+
+.mobile-toggle-label {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  user-select: none;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -121,18 +138,6 @@ img {
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-/* Hamburger button untuk Mobile */
-.mobile-toggle {
-  display: none;
-  background: transparent;
-  border: 1px solid var(--border-color);
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-size: 1.25rem;
-  color: var(--text-main);
 }
 
 /* --- BUTTONS --- */
@@ -539,7 +544,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  .mobile-toggle {
+  .mobile-toggle-label {
     display: block;
   }
 
@@ -558,7 +563,8 @@ img {
     align-items: flex-start;
   }
 
-  .nav-links.is-open {
+  /* CSS-ONLY TRIGGER saat checkbox dicentang */
+  .nav-toggle-input:checked ~ nav .nav-links {
     display: flex;
   }
 

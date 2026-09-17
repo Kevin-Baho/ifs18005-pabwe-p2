@@ -9,6 +9,9 @@
     />
     <title>Curriculum Vitae — Risky Kevin Naibaho | DelAI Studio</title>
 
+    <!-- Favicon Aman -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230369a1'/><text x='50%' y='65%' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>D</text></svg>" type="image/svg+xml" />
+
     <!-- Tailwind CSS v4 Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -31,65 +34,64 @@
     </style>
   </head>
   <body class="bg-slate-100 text-slate-800 antialiased font-sans min-h-screen flex flex-col">
-    <!-- NAVBAR INTEGRASI (Konsisten dengan DelAI Studio) -->
+    <!-- NAVBAR INTEGRASI -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-      <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-2 font-bold text-lg text-brand">
-          <i class="ti ti-cpu text-2xl" aria-hidden="true"></i>
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2 font-bold text-lg lg:text-xl text-brand">
+          <i class="ti ti-cpu text-2xl lg:text-3xl" aria-hidden="true"></i>
           <span>DelAI<span class="text-slate-900">Studio</span></span>
         </a>
 
-        <nav class="flex items-center gap-4 text-sm font-medium" aria-label="Navigasi Utama">
+        <nav class="flex items-center gap-4 text-sm lg:text-base font-medium" aria-label="Navigasi Utama">
           <a href="index.html" class="text-slate-700 hover:text-brand transition flex items-center gap-1 font-semibold">
             <i class="ti ti-home" aria-hidden="true"></i> Landing Page
           </a>
           <a href="blog.html" class="text-slate-700 hover:text-brand transition flex items-center gap-1 font-semibold">
             <i class="ti ti-article" aria-hidden="true"></i> Blog AI
           </a>
-          <a href="index.html#kontak" class="hidden sm:inline-flex bg-brand text-white px-3.5 py-1.5 rounded-full font-bold hover:bg-brand-dark transition">
+          <a href="index.html#kontak" class="hidden sm:inline-flex bg-brand text-white px-4 py-1.5 rounded-full font-bold hover:bg-brand-dark transition">
             Kontak
           </a>
         </nav>
       </div>
     </header>
 
-    <!-- MAIN CONTAINER -->
-    <main class="max-w-5xl mx-auto px-4 py-8 flex-grow w-full">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- MAIN CONTAINER (Eksplisit sm:, md:, lg: prefixes) -->
+    <main class="max-w-6xl mx-auto px-4 py-8 lg:py-12 flex-grow w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
         
         <!-- SIDEBAR KIRI (PROFIL & KONTAK) -->
-        <aside class="md:col-span-1 space-y-6">
+        <aside class="md:col-span-1 lg:col-span-1 space-y-6">
           <!-- Card Profil Pokok -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <!-- Avatar Visual Aman -->
-            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-600 p-1 shadow-md mb-4 flex items-center justify-center">
-              <div class="w-full h-full bg-slate-100 rounded-full flex items-center justify-center text-3xl font-extrabold text-brand">
+            <div class="w-32 h-32 lg:w-36 lg:h-36 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-600 p-1 shadow-md mb-4 flex items-center justify-center">
+              <div class="w-full h-full bg-slate-100 rounded-full flex items-center justify-center text-3xl lg:text-4xl font-extrabold text-brand">
                 RKN
               </div>
             </div>
             
-            <h1 class="text-xl font-bold text-slate-900 leading-tight">Risky Kevin Naibaho</h1>
-            <p class="text-brand font-bold text-sm mt-1">Mahasiswa S1 Informatika</p>
-            <p class="text-xs text-slate-600 font-medium">Institut Teknologi Del</p>
+            <h1 class="text-xl lg:text-2xl font-bold text-slate-900 leading-tight">Risky Kevin Naibaho</h1>
+            <p class="text-brand font-bold text-sm lg:text-base mt-1">Mahasiswa S1 Informatika</p>
+            <p class="text-xs lg:text-sm text-slate-600 font-medium">Institut Teknologi Del</p>
 
             <hr class="my-4 border-slate-200" />
 
             <!-- Informasi Kontak -->
-            <div class="space-y-3 text-left text-xs text-slate-700 font-medium">
+            <div class="space-y-3 text-left text-xs lg:text-sm text-slate-700 font-medium">
               <div class="flex items-center gap-2.5">
-                <i class="ti ti-mail text-brand text-base" aria-hidden="true"></i>
+                <i class="ti ti-mail text-brand text-base lg:text-lg" aria-hidden="true"></i>
                 <span class="break-all">baho11347@gmail.com</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i class="ti ti-brand-whatsapp text-brand text-base" aria-hidden="true"></i>
+                <i class="ti ti-brand-whatsapp text-brand text-base lg:text-lg" aria-hidden="true"></i>
                 <span>+62 823-6143-9414</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i class="ti ti-map-pin text-brand text-base" aria-hidden="true"></i>
+                <i class="ti ti-map-pin text-brand text-base lg:text-lg" aria-hidden="true"></i>
                 <span>Toba, Sumatera Utara</span>
               </div>
               <div class="flex items-center gap-2.5">
-                <i class="ti ti-brand-github text-brand text-base" aria-hidden="true"></i>
+                <i class="ti ti-brand-github text-brand text-base lg:text-lg" aria-hidden="true"></i>
                 <span>github.com/riskykevin</span>
               </div>
             </div>
@@ -97,7 +99,7 @@
 
           <!-- Card Keahlian / Skills -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+            <h2 class="font-bold text-slate-900 text-sm lg:text-base uppercase tracking-wider mb-4 flex items-center gap-2">
               <i class="ti ti-code text-brand text-lg" aria-hidden="true"></i> Programming Skills
             </h2>
             
@@ -127,57 +129,57 @@
 
           <!-- Card Sertifikasi -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-3 flex items-center gap-2">
+            <h2 class="font-bold text-slate-900 text-sm lg:text-base uppercase tracking-wider mb-3 flex items-center gap-2">
               <i class="ti ti-certificate text-brand text-lg" aria-hidden="true"></i> Sertifikasi
             </h2>
-            <ul class="text-xs space-y-3 text-slate-700">
+            <ul class="text-xs lg:text-sm space-y-3 text-slate-700">
               <li class="border-l-2 border-brand pl-3">
                 <p class="font-bold text-slate-900">Menjadi React Web Developer Expert</p>
-                <span class="text-slate-500 text-[11px]">Dicoding Indonesia &bull; Nov 2023</span>
+                <span class="text-slate-500 text-[11px] lg:text-xs">Dicoding Indonesia &bull; Nov 2023</span>
               </li>
               <li class="border-l-2 border-brand pl-3">
                 <p class="font-bold text-slate-900">Menjadi Android Developer Expert</p>
-                <span class="text-slate-500 text-[11px]">Dicoding Indonesia</span>
+                <span class="text-slate-500 text-[11px] lg:text-xs">Dicoding Indonesia</span>
               </li>
             </ul>
           </div>
         </aside>
 
-        <!-- KONTEN UTAMA KANAN -->
-        <div class="md:col-span-2 space-y-6">
+        <!-- KONTEN UTAMA KANAN (md:col-span-2 lg:col-span-3) -->
+        <div class="md:col-span-2 lg:col-span-3 space-y-6">
           
           <!-- Tentang Saya -->
-          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="text-base font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <section class="bg-white p-6 lg:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="text-base lg:text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
               <i class="ti ti-user-check text-brand text-xl" aria-hidden="true"></i> Tentang Saya
             </h2>
-            <p class="text-slate-700 text-sm leading-relaxed">
+            <p class="text-slate-700 text-sm lg:text-base leading-relaxed">
               Saya adalah seorang mahasiswa Informatika di Institut Teknologi Del yang memiliki minat kuat dalam rekayasa perangkat lunak, khususnya pengembangan aplikasi berbasis Web dan Mobile. Berpengalaman dalam merancang dan mengimplementasikan sistem yang terstruktur, efisien, serta responsif.
             </p>
           </section>
 
           <!-- SECTION PENGALAMAN (Wajib - 2 Item) -->
-          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <section class="bg-white p-6 lg:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="text-base lg:text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
               <i class="ti ti-briefcase text-brand text-xl" aria-hidden="true"></i> Pengalaman
             </h2>
             <div class="space-y-4">
               <!-- Item Pengalaman 1 -->
               <div class="border-l-2 border-brand pl-4">
-                <span class="text-xs font-bold text-brand">2025 - Sekarang</span>
-                <h3 class="text-sm font-bold text-slate-900">Lead Full-Stack Developer</h3>
-                <p class="text-xs text-slate-600 font-semibold mb-1">DelAI Studio Initiative</p>
-                <p class="text-xs text-slate-700">
+                <span class="text-xs lg:text-sm font-bold text-brand">2025 - Sekarang</span>
+                <h3 class="text-sm lg:text-base font-bold text-slate-900">Lead Full-Stack Developer</h3>
+                <p class="text-xs lg:text-sm text-slate-600 font-semibold mb-1">DelAI Studio Initiative</p>
+                <p class="text-xs lg:text-sm text-slate-700">
                   Memimpin perancangan antarmuka landing page enterprise, integrasi modul blog berbasis Bootstrap, dan manajemen state aplikasi web responsif.
                 </p>
               </div>
 
               <!-- Item Pengalaman 2 -->
               <div class="border-l-2 border-slate-400 pl-4">
-                <span class="text-xs font-bold text-slate-700">2024 - 2025</span>
-                <h3 class="text-sm font-bold text-slate-900">Academic Project Member</h3>
-                <p class="text-xs text-slate-600 font-semibold mb-1">Laboratorium Komputasi IT Del</p>
-                <p class="text-xs text-slate-700">
+                <span class="text-xs lg:text-sm font-bold text-slate-700">2024 - 2025</span>
+                <h3 class="text-sm lg:text-base font-bold text-slate-900">Academic Project Member</h3>
+                <p class="text-xs lg:text-sm text-slate-600 font-semibold mb-1">Laboratorium Komputasi IT Del</p>
+                <p class="text-xs lg:text-sm text-slate-700">
                   Mengembangkan RESTful API backend menggunakan HapiJS dan merancang antarmuka mobile native menggunakan Kotlin dan Android Compose.
                 </p>
               </div>
@@ -185,20 +187,20 @@
           </section>
 
           <!-- Riwayat Pendidikan -->
-          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <section class="bg-white p-6 lg:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="text-base lg:text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
               <i class="ti ti-school text-brand text-xl" aria-hidden="true"></i> Pendidikan
             </h2>
             <div class="space-y-4">
               <div class="border-l-2 border-brand pl-4">
-                <span class="text-xs font-bold text-brand">2024 - 2028 (Aktif)</span>
-                <h3 class="text-sm font-bold text-slate-900">Sarjana Informatika (S1)</h3>
-                <p class="text-xs text-slate-600 font-semibold">Institut Teknologi Del</p>
+                <span class="text-xs lg:text-sm font-bold text-brand">2024 - 2028 (Aktif)</span>
+                <h3 class="text-sm lg:text-base font-bold text-slate-900">Sarjana Informatika (S1)</h3>
+                <p class="text-xs lg:text-sm text-slate-600 font-semibold">Institut Teknologi Del</p>
               </div>
 
               <div class="border-l-2 border-slate-300 pl-4 space-y-2">
-                <span class="text-xs font-bold text-slate-600">Pendidikan Sebelumnya</span>
-                <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside font-medium">
+                <span class="text-xs lg:text-sm font-bold text-slate-600">Pendidikan Sebelumnya</span>
+                <ul class="text-xs lg:text-sm text-slate-700 space-y-1 list-disc list-inside font-medium">
                   <li>SMA Negeri 1 Pangaribuan</li>
                   <li>SMP Swasta Budi Mulia Pangururan</li>
                   <li>SD Negeri 173197 Rahutbosi Onan</li>
@@ -207,47 +209,47 @@
             </div>
           </section>
 
-          <!-- Portofolio & Proyek Pilihan -->
-          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+          <!-- Portofolio & Proyek Pilihan (Grid sm: md: lg:) -->
+          <section class="bg-white p-6 lg:p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h2 class="text-base lg:text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
               <i class="ti ti-folder-star text-brand text-xl" aria-hidden="true"></i> Portofolio &amp; Proyek
             </h2>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
-                  <h3 class="font-bold text-xs text-slate-900">Forum API</h3>
-                  <span class="px-2 py-0.5 bg-slate-800 text-white rounded text-[10px] font-bold">HapiJS</span>
+                  <h3 class="font-bold text-xs lg:text-sm text-slate-900">Forum API</h3>
+                  <span class="px-2 py-0.5 bg-slate-800 text-white rounded text-[10px] lg:text-xs font-bold">HapiJS</span>
                 </div>
-                <p class="text-[12px] text-slate-600 mb-2">RESTful API backend lengkap dengan autentikasi token, thread, dan komentar pengujian otomatis.</p>
-                <span class="text-[11px] font-semibold text-brand">JavaScript &bull; Backend</span>
+                <p class="text-[12px] lg:text-xs text-slate-600 mb-2">RESTful API backend lengkap dengan autentikasi token, thread, dan pengujian otomatis.</p>
+                <span class="text-[11px] lg:text-xs font-semibold text-brand">JavaScript &bull; Backend</span>
               </div>
 
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
-                  <h3 class="font-bold text-xs text-slate-900">Github Expose</h3>
-                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] font-bold">Android</span>
+                  <h3 class="font-bold text-xs lg:text-sm text-slate-900">Github Expose</h3>
+                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] lg:text-xs font-bold">Android</span>
                 </div>
-                <p class="text-[12px] text-slate-600 mb-2">Aplikasi mobile native pencarian profil dan repositori GitHub memanfaatkan REST API GitHub.</p>
-                <span class="text-[11px] font-semibold text-brand">Kotlin &bull; Android Studio</span>
+                <p class="text-[12px] lg:text-xs text-slate-600 mb-2">Aplikasi mobile native pencarian profil dan repositori GitHub via REST API.</p>
+                <span class="text-[11px] lg:text-xs font-semibold text-brand">Kotlin &bull; Android Studio</span>
               </div>
 
               <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
                 <div class="flex items-center justify-between mb-1.5">
-                  <h3 class="font-bold text-xs text-slate-900">Kas Tracking</h3>
-                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] font-bold">Laravel</span>
+                  <h3 class="font-bold text-xs lg:text-sm text-slate-900">Kas Tracking</h3>
+                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] lg:text-xs font-bold">Laravel</span>
                 </div>
-                <p class="text-[12px] text-slate-600 mb-2">Sistem manajemen pencatatan arus kas masuk dan keluar organisasi dengan pelaporan otomatis.</p>
-                <span class="text-[11px] font-semibold text-brand">PHP &bull; Fullstack Web</span>
+                <p class="text-[12px] lg:text-xs text-slate-600 mb-2">Sistem manajemen pencatatan arus kas masuk dan keluar dengan pelaporan otomatis.</p>
+                <span class="text-[11px] lg:text-xs font-semibold text-brand">PHP &bull; Fullstack Web</span>
               </div>
 
               <a href="index.html" class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50 block group">
                 <div class="flex items-center justify-between mb-1.5">
-                  <h3 class="font-bold text-xs text-slate-900 group-hover:text-brand">DelAI Studio Landing</h3>
+                  <h3 class="font-bold text-xs lg:text-sm text-slate-900 group-hover:text-brand">DelAI Studio Landing</h3>
                   <i class="ti ti-arrow-up-right text-slate-500 group-hover:text-brand" aria-hidden="true"></i>
                 </div>
-                <p class="text-[12px] text-slate-600 mb-2">Landing page agensi AI responsif yang dibangun menggunakan murni External CSS3 &amp; Grid.</p>
-                <span class="text-[11px] font-semibold text-brand">PABWE Praktikum 2</span>
+                <p class="text-[12px] lg:text-xs text-slate-600 mb-2">Landing page agensi AI responsif yang dibangun menggunakan murni External CSS3 &amp; Grid.</p>
+                <span class="text-[11px] lg:text-xs font-semibold text-brand">PABWE Praktikum 2</span>
               </a>
             </div>
           </section>
@@ -257,8 +259,8 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-600 font-medium mt-auto">
-      <div class="max-w-5xl mx-auto px-4">
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs lg:text-sm text-slate-600 font-medium mt-auto">
+      <div class="max-w-6xl mx-auto px-4">
         © 2026 Risky Kevin Naibaho &bull; Institut Teknologi Del &bull; Praktikum PABWE
       </div>
     </footer>

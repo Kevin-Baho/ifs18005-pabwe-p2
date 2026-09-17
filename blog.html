@@ -5,44 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Blog dan wawasan kecerdasan buatan dari DelAI Studio." />
     <title>Blog &amp; Riset AI — DelAI Studio</title>
-    <link rel="icon" href="assets/img/logo.png" type="image/png" />
 
-    <!-- Bootstrap 5.3 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <!-- Favicon Aman -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230369a1'/><text x='50%' y='65%' font-size='50' font-weight='bold' fill='white' text-anchor='middle'>D</text></svg>" type="image/svg+xml" />
 
-    <style>
-      body {
-        font-family: system-ui, -apple-system, sans-serif;
-        color: #0f172a;
-      }
-      .card-blog {
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-      .card-blog:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
-      }
-      .blog-thumb {
-        height: 200px;
-        object-fit: cover;
-      }
-      /* Custom high-contrast badges (WCAG 2 AA Compliant) */
-      .badge-ai-primary { background-color: #0369a1; color: #ffffff; }
-      .badge-ai-neutral { background-color: #334155; color: #ffffff; }
-      .badge-ai-success { background-color: #047857; color: #ffffff; }
-      .badge-ai-warning { background-color: #b45309; color: #ffffff; }
-      .badge-ai-danger  { background-color: #b91c1c; color: #ffffff; }
-    </style>
+    <!-- BOOTSTRAP 5 LOKAL -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- BOOTSTRAP ICONS CDN (Aman & Otomatis) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   </head>
-  <body class="bg-light d-flex flex-column min-vh-100">
+  <body class="bg-light d-flex flex-column min-vh-100 text-dark">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
       <div class="container">
@@ -85,11 +58,11 @@
     <!-- HEADER BLOG -->
     <header class="bg-white border-bottom py-5">
       <div class="container text-center py-3">
-        <span class="badge badge-ai-primary px-3 py-2 rounded-pill mb-3">
+        <span class="badge bg-primary text-white px-3 py-2 rounded-pill mb-3">
           <i class="bi bi-journal-text me-1" aria-hidden="true"></i> Artikel &amp; Riset Terapan
         </span>
         <h1 class="fw-bold display-5 mb-3">Wawasan &amp; Rekayasa AI</h1>
-        <p class="lead text-dark mx-auto" style="max-width: 650px;">
+        <p class="lead text-dark mx-auto">
           Panduan praktis implementasi LLM enterprise, arsitektur RAG, etika kecerdasan buatan, dan studi kasus otomasi industri.
         </p>
       </div>
@@ -101,16 +74,16 @@
         <div class="row g-4">
           <!-- Item 1 -->
           <div class="col-md-6 col-lg-6">
-            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog bg-white">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white">
               <img
                 src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=800&auto=format&fit=crop&q=60"
-                class="card-img-top blog-thumb"
+                class="card-img-top"
                 alt="Arsitektur RAG Enterprise"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge badge-ai-primary px-3 py-1.5 rounded-pill">Generative AI</span>
-                  <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Enterprise RAG</span>
+                  <span class="badge bg-primary text-white px-3 py-1.5 rounded-pill">Generative AI</span>
+                  <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill">Enterprise RAG</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-underline text-dark">
@@ -134,16 +107,16 @@
 
           <!-- Item 2 -->
           <div class="col-md-6 col-lg-6">
-            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog bg-white">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white">
               <img
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60"
-                class="card-img-top blog-thumb"
+                class="card-img-top"
                 alt="Computer Vision Industri"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge badge-ai-success px-3 py-1.5 rounded-pill">Computer Vision</span>
-                  <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Manufaktur</span>
+                  <span class="badge bg-success text-white px-3 py-1.5 rounded-pill">Computer Vision</span>
+                  <span class="badge bg-dark text-white px-3 py-1.5 rounded-pill">Manufaktur</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-underline text-dark">
@@ -167,15 +140,15 @@
 
           <!-- Item 3 -->
           <div class="col-md-6 col-lg-6">
-            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog bg-white">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white">
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
-                class="card-img-top blog-thumb"
+                class="card-img-top"
                 alt="Analitik Prediktif Data"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge badge-ai-warning px-3 py-1.5 rounded-pill">Predictive AI</span>
+                  <span class="badge bg-warning text-dark px-3 py-1.5 rounded-pill">Predictive AI</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-underline text-dark">
@@ -199,15 +172,15 @@
 
           <!-- Item 4 -->
           <div class="col-md-6 col-lg-6">
-            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden card-blog bg-white">
+            <article class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white">
               <img
                 src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=60"
-                class="card-img-top blog-thumb"
+                class="card-img-top"
                 alt="Tata Kelola Regulasi AI"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge badge-ai-danger px-3 py-1.5 rounded-pill">Tata Kelola &amp; Etika</span>
+                  <span class="badge bg-danger text-white px-3 py-1.5 rounded-pill">Tata Kelola &amp; Etika</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-underline text-dark">
@@ -242,7 +215,7 @@
       </div>
     </main>
 
-    <!-- FOOTER (WCAG link-in-text-block compliant) -->
+    <!-- FOOTER -->
     <footer class="bg-dark text-white py-4 mt-auto border-top border-secondary text-center small">
       <div class="container">
         <p class="mb-2 text-light">© 2026 DelAI Studio &bull; Risky Kevin Naibaho &bull; Bootstrap 5 Module.</p>
@@ -253,7 +226,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BOOTSTRAP JS LOKAL -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
