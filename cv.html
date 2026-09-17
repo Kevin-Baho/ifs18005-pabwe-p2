@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum Vitae — AI & Web Engineer</title>
+    <meta
+      name="description"
+      content="Curriculum Vitae dan portofolio Risky Kevin Naibaho - Mahasiswa Informatika Institut Teknologi Del."
+    />
+    <title>Curriculum Vitae — Risky Kevin Naibaho</title>
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
 
     <!-- Tailwind CSS v4 Play CDN -->
@@ -15,11 +19,11 @@
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
     />
 
-    <!-- Tailwind v4 @theme configuration -->
+    <!-- Tailwind v4 @theme (WCAG 2 AA Compliant) -->
     <style type="text/tailwindcss">
       @theme {
-        --color-brand: #0284c7;
-        --color-brand-dark: #0369a1;
+        --color-brand: #0369a1;
+        --color-brand-dark: #075985;
         --color-brand-soft: #e0f2fe;
       }
       html {
@@ -28,63 +32,68 @@
     </style>
   </head>
   <body class="bg-slate-100 text-slate-800 antialiased font-sans min-h-screen flex flex-col">
-    <!-- NAVBAR CV (Tailwind) -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <!-- NAVBAR INTEGRASI -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
       <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
         <a href="cv.html" class="flex items-center gap-2 font-bold text-lg text-brand">
-          <i class="ti ti-id-badge-2 text-2xl"></i>
+          <i class="ti ti-id-badge-2 text-2xl" aria-hidden="true"></i>
           <span>Digital<span class="text-slate-900">CV</span></span>
         </a>
 
-        <nav class="flex items-center gap-3 text-sm font-medium">
-          <a href="index.html" class="text-slate-600 hover:text-brand transition flex items-center gap-1">
-            <i class="ti ti-home"></i> Landing Page
+        <nav class="flex items-center gap-3 text-sm font-medium" aria-label="Navigasi Utama">
+          <a href="index.html" class="text-slate-700 hover:text-brand transition flex items-center gap-1 font-semibold">
+            <i class="ti ti-home" aria-hidden="true"></i> Landing Page
           </a>
-          <a href="blog.html" class="text-slate-600 hover:text-brand transition flex items-center gap-1">
-            <i class="ti ti-article"></i> Blog AI
+          <a href="blog.html" class="text-slate-700 hover:text-brand transition flex items-center gap-1 font-semibold">
+            <i class="ti ti-article" aria-hidden="true"></i> Blog AI
           </a>
-          <a href="index.html#kontak" class="hidden sm:inline-flex bg-brand text-white px-3.5 py-1.5 rounded-full font-semibold hover:bg-brand-dark transition">
-            Hire Me
+          <a href="index.html#kontak" class="hidden sm:inline-flex bg-brand text-white px-3.5 py-1.5 rounded-full font-bold hover:bg-brand-dark transition">
+            Kontak Saya
           </a>
         </nav>
       </div>
     </header>
 
-    <!-- MAIN CV CONTAINER -->
+    <!-- MAIN CONTAINER -->
     <main class="max-w-5xl mx-auto px-4 py-8 flex-grow w-full">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <!-- SIDEBAR / PROFIL KIRI -->
+        <!-- SIDEBAR KIRI (PROFIL & KONTAK) -->
         <aside class="md:col-span-1 space-y-6">
           <!-- Card Profil Pokok -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <div class="w-28 h-28 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-500 p-1 shadow-md mb-4">
-              <div class="w-full h-full bg-slate-100 rounded-full flex items-center justify-center text-3xl font-bold text-brand">
-                NM
-              </div>
+            <div class="w-32 h-32 mx-auto rounded-full bg-gradient-to-tr from-brand to-indigo-600 p-1 shadow-md mb-4 overflow-hidden">
+              <img
+                src="risky.jpg"
+                alt="Foto Profil Risky Kevin Naibaho"
+                class="w-full h-full object-cover rounded-full bg-slate-200"
+                onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Risky+Kevin+Naibaho&background=0369a1&color=fff&size=200';"
+              />
             </div>
-            <h1 class="text-xl font-bold text-slate-900">Nova Mahasiswa</h1>
-            <p class="text-brand font-medium text-sm mt-1">Aspiring AI & Fullstack Engineer</p>
+            
+            <h1 class="text-xl font-bold text-slate-900 leading-tight">Risky Kevin Naibaho</h1>
+            <p class="text-brand font-bold text-sm mt-1">Mahasiswa S1 Informatika</p>
+            <p class="text-xs text-slate-600 font-medium">Institut Teknologi Del</p>
 
-            <hr class="my-4 border-slate-100" />
+            <hr class="my-4 border-slate-200" />
 
-            <!-- Kontak Item -->
-            <div class="space-y-2.5 text-left text-xs text-slate-600">
-              <div class="flex items-center gap-2">
-                <i class="ti ti-mail text-brand text-base"></i>
-                <span>nova.engineer@example.com</span>
+            <!-- Informasi Kontak -->
+            <div class="space-y-3 text-left text-xs text-slate-700 font-medium">
+              <div class="flex items-center gap-2.5">
+                <i class="ti ti-mail text-brand text-base" aria-hidden="true"></i>
+                <span class="break-all">baho11347@gmail.com</span>
               </div>
-              <div class="flex items-center gap-2">
-                <i class="ti ti-phone text-brand text-base"></i>
-                <span>+62 812-3456-7890</span>
+              <div class="flex items-center gap-2.5">
+                <i class="ti ti-brand-whatsapp text-brand text-base" aria-hidden="true"></i>
+                <span>+62 823-6143-9414</span>
               </div>
-              <div class="flex items-center gap-2">
-                <i class="ti ti-map-pin text-brand text-base"></i>
-                <span>Laguboti, Sumatera Utara</span>
+              <div class="flex items-center gap-2.5">
+                <i class="ti ti-map-pin text-brand text-base" aria-hidden="true"></i>
+                <span>Toba, Sumatera Utara</span>
               </div>
-              <div class="flex items-center gap-2">
-                <i class="ti ti-brand-github text-brand text-base"></i>
-                <span>github.com/novamind</span>
+              <div class="flex items-center gap-2.5">
+                <i class="ti ti-brand-github text-brand text-base" aria-hidden="true"></i>
+                <span>github.com/riskykevin</span>
               </div>
             </div>
           </div>
@@ -92,32 +101,46 @@
           <!-- Card Keahlian / Skills -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h2 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
-              <i class="ti ti-tools text-brand text-lg"></i> Technical Skills
+              <i class="ti ti-code text-brand text-lg" aria-hidden="true"></i> Programming Skills
             </h2>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-brand-soft text-brand text-xs font-semibold rounded-lg">HTML5 & CSS3</span>
-              <span class="px-3 py-1 bg-brand-soft text-brand text-xs font-semibold rounded-lg">Bootstrap 5</span>
-              <span class="px-3 py-1 bg-brand-soft text-brand text-xs font-semibold rounded-lg">Tailwind CSS 4</span>
-              <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg">JavaScript (ES6+)</span>
-              <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg">Python (FastAPI)</span>
-              <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg">LangChain & RAG</span>
-              <span class="px-3 py-1 bg-slate-100 text-slate-700 text-xs font-semibold rounded-lg">Git & GitHub</span>
+            
+            <div class="mb-4">
+              <h3 class="text-xs font-bold text-slate-600 mb-2 uppercase">Bahasa Pemrograman</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-slate-800 text-white text-xs font-bold rounded-md">Java</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-white text-xs font-bold rounded-md">JavaScript</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-white text-xs font-bold rounded-md">Kotlin</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-white text-xs font-bold rounded-md">PHP</span>
+                <span class="px-2.5 py-1 bg-slate-800 text-white text-xs font-bold rounded-md">Python</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-bold text-slate-600 mb-2 uppercase">Framework &amp; Tools</h3>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">Android Compose</span>
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">Laravel</span>
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">NextJS</span>
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">Flask</span>
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">HapiJS</span>
+                <span class="px-2.5 py-1 bg-sky-800 text-white text-xs font-bold rounded-md">Tailwind / Bootstrap</span>
+              </div>
             </div>
           </div>
 
-          <!-- Card Bahasa -->
+          <!-- Card Sertifikasi -->
           <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h2 class="font-bold text-slate-900 text-sm uppercase tracking-wider mb-3 flex items-center gap-2">
-              <i class="ti ti-language text-brand text-lg"></i> Bahasa
+              <i class="ti ti-certificate text-brand text-lg" aria-hidden="true"></i> Sertifikasi
             </h2>
-            <ul class="text-xs space-y-2 text-slate-600">
-              <li class="flex justify-between">
-                <span>Bahasa Indonesia</span>
-                <span class="font-semibold text-slate-900">Native</span>
+            <ul class="text-xs space-y-3 text-slate-700">
+              <li class="border-l-2 border-brand pl-3">
+                <p class="font-bold text-slate-900">Menjadi React Web Developer Expert</p>
+                <span class="text-slate-500 text-[11px]">Dicoding Indonesia &bull; Nov 2023</span>
               </li>
-              <li class="flex justify-between">
-                <span>Bahasa Inggris</span>
-                <span class="font-semibold text-slate-900">Professional Working</span>
+              <li class="border-l-2 border-brand pl-3">
+                <p class="font-bold text-slate-900">Menjadi Android Developer Expert</p>
+                <span class="text-slate-500 text-[11px]">Dicoding Indonesia</span>
               </li>
             </ul>
           </div>
@@ -126,74 +149,86 @@
         <!-- KONTEN UTAMA KANAN -->
         <div class="md:col-span-2 space-y-6">
           
-          <!-- Ringkasan Profil -->
+          <!-- Tentang Saya -->
           <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h2 class="text-base font-bold text-slate-900 mb-3 flex items-center gap-2">
-              <i class="ti ti-user-check text-brand text-xl"></i> Tentang Saya
+              <i class="ti ti-user-check text-brand text-xl" aria-hidden="true"></i> Tentang Saya
             </h2>
-            <p class="text-slate-600 text-sm leading-relaxed">
-              Mahasiswa Teknologi Informasi dengan minat mendalam pada integrasi sistem kecerdasan buatan terapan dan pengembangan antarmuka web modern. Memiliki pengalaman membangun frontend responsif berbasis Bootstrap, Tailwind, dan arsitektur LLM berbasis Python.
+            <p class="text-slate-700 text-sm leading-relaxed">
+              Saya adalah seorang mahasiswa Informatika di Institut Teknologi Del yang memiliki minat kuat dalam rekayasa perangkat lunak, khususnya pengembangan aplikasi berbasis Web dan Mobile. Berpengalaman dalam menggunakan berbagai bahasa pemrograman dan framework modern untuk merancang solusi sistem yang terstruktur, efisien, dan inovatif.
             </p>
           </section>
 
-          <!-- Pengalaman / Experience -->
+          <!-- Riwayat Pendidikan -->
           <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <i class="ti ti-briefcase text-brand text-xl"></i> Pengalaman
+              <i class="ti ti-school text-brand text-xl" aria-hidden="true"></i> Pendidikan
             </h2>
             <div class="space-y-4">
-              <div class="border-l-2 border-brand pl-4 relative">
-                <span class="text-xs font-semibold text-brand">2025 - Sekarang</span>
-                <h3 class="text-sm font-bold text-slate-900">AI Frontend Specialist (Project Lab)</h3>
-                <p class="text-xs text-slate-500 mb-2">NovaMind AI Studio</p>
-                <p class="text-xs text-slate-600">
-                  Mengembangkan landing page, dashboard metrik performa model, dan integrasi UI chat agent responsif untuk kebutuhan demonstrasi klien.
-                </p>
+              <!-- Pendidikan Tinggi -->
+              <div class="border-l-2 border-brand pl-4">
+                <span class="text-xs font-bold text-brand">2024 - 2028 (Aktif)</span>
+                <h3 class="text-sm font-bold text-slate-900">Sarjana Informatika (S1)</h3>
+                <p class="text-xs text-slate-600 font-semibold">Institut Teknologi Del</p>
               </div>
 
-              <div class="border-l-2 border-slate-300 pl-4 relative">
-                <span class="text-xs font-semibold text-slate-500">2024 - 2025</span>
-                <h3 class="text-sm font-bold text-slate-900">Web Development Assistant</h3>
-                <p class="text-xs text-slate-500 mb-2">Laboratorium Rekayasa Perangkat Lunak</p>
-                <p class="text-xs text-slate-600">
-                  Membimbing praktikan dalam memahami konsep Box Model, CSS Grid/Flexbox, dan pemanfaatan framework CSS modern.
-                </p>
+              <!-- Riwayat Sekolah Sebelumnya -->
+              <div class="border-l-2 border-slate-300 pl-4 space-y-2">
+                <span class="text-xs font-bold text-slate-600">Pendidikan Sebelumnya</span>
+                <ul class="text-xs text-slate-700 space-y-1 list-disc list-inside font-medium">
+                  <li>SMA Negeri 1 Pangaribuan</li>
+                  <li>SMP Swasta Budi Mulia Pangururan</li>
+                  <li>SD Negeri 173197 Rahutbosi Onan</li>
+                </ul>
               </div>
             </div>
           </section>
 
-          <!-- Pendidikan -->
+          <!-- Portofolio & Proyek Pilihan -->
           <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <i class="ti ti-school text-brand text-xl"></i> Pendidikan
+              <i class="ti ti-folder-star text-brand text-xl" aria-hidden="true"></i> Portofolio &amp; Proyek
             </h2>
-            <div class="border-l-2 border-brand pl-4">
-              <span class="text-xs font-semibold text-brand">2023 - 2027 (Diharapkan)</span>
-              <h3 class="text-sm font-bold text-slate-900">Sarjana Terapan / S1 Rekayasa Perangkat Lunak</h3>
-              <p class="text-xs text-slate-500">Institut Teknologi Del &bull; IPK: 3.82 / 4.00</p>
-            </div>
-          </section>
-
-          <!-- Proyek Pilihan -->
-          <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-            <h2 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <i class="ti ti-folder-star text-brand text-xl"></i> Portofolio & Proyek
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <a href="index.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-brand transition block group">
-                <div class="flex items-center justify-between mb-1">
-                  <h3 class="font-bold text-xs text-slate-900 group-hover:text-brand">NovaMind AI Landing</h3>
-                  <i class="ti ti-arrow-up-right text-slate-400 group-hover:text-brand"></i>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <!-- Proyek 1 -->
+              <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-bold text-xs text-slate-900">Forum API</h3>
+                  <span class="px-2 py-0.5 bg-slate-800 text-white rounded text-[10px] font-bold">HapiJS</span>
                 </div>
-                <p class="text-[11px] text-slate-500">Landing page agensi AI dibangun dengan Pure CSS, CSS Grid, dan CSS Variables.</p>
-              </a>
+                <p class="text-[12px] text-slate-600 mb-2">RESTful API backend lengkap dengan autentikasi token, thread, dan komentar pengujian otomatis.</p>
+                <span class="text-[11px] font-semibold text-brand">JavaScript &bull; Backend</span>
+              </div>
 
-              <a href="blog.html" class="p-3.5 rounded-xl border border-slate-200 hover:border-brand transition block group">
-                <div class="flex items-center justify-between mb-1">
-                  <h3 class="font-bold text-xs text-slate-900 group-hover:text-brand">AI Research Blog</h3>
-                  <i class="ti ti-arrow-up-right text-slate-400 group-hover:text-brand"></i>
+              <!-- Proyek 2 -->
+              <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-bold text-xs text-slate-900">Github Expose</h3>
+                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] font-bold">Android</span>
                 </div>
-                <p class="text-[11px] text-slate-500">Portal artikel dan detail riset LLM responsif menggunakan Bootstrap 5 & Icons.</p>
+                <p class="text-[12px] text-slate-600 mb-2">Aplikasi mobile native pencarian profil dan repositori GitHub memanfaatkan REST API GitHub.</p>
+                <span class="text-[11px] font-semibold text-brand">Kotlin &bull; Android Studio</span>
+              </div>
+
+              <!-- Proyek 3 -->
+              <div class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50">
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-bold text-xs text-slate-900">Kas Tracking</h3>
+                  <span class="px-2 py-0.5 bg-sky-800 text-white rounded text-[10px] font-bold">Laravel</span>
+                </div>
+                <p class="text-[12px] text-slate-600 mb-2">Sistem manajemen pencatatan arus kas masuk dan keluar organisasi dengan pelaporan otomatis.</p>
+                <span class="text-[11px] font-semibold text-brand">PHP &bull; Fullstack Web</span>
+              </div>
+
+              <!-- Proyek 4: Integrasi Modul Praktikum -->
+              <a href="index.html" class="p-4 rounded-xl border border-slate-200 hover:border-brand transition bg-slate-50/50 block group">
+                <div class="flex items-center justify-between mb-1.5">
+                  <h3 class="font-bold text-xs text-slate-900 group-hover:text-brand">DelAI Studio Landing</h3>
+                  <i class="ti ti-arrow-up-right text-slate-500 group-hover:text-brand" aria-hidden="true"></i>
+                </div>
+                <p class="text-[12px] text-slate-600 mb-2">Landing page agensi AI responsif yang dibangun menggunakan murni External CSS3 &amp; Grid.</p>
+                <span class="text-[11px] font-semibold text-brand">PABWE Praktikum 2</span>
               </a>
             </div>
           </section>
@@ -203,9 +238,9 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500 mt-auto">
+    <footer class="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-600 font-medium mt-auto">
       <div class="max-w-5xl mx-auto px-4">
-        © 2026 Nova Mahasiswa &bull; Dibuat dengan Tailwind CSS 4 & Tabler Icons &bull; PABWE Praktikum 2
+        © 2026 Risky Kevin Naibaho &bull; Institut Teknologi Del &bull; Praktikum PABWE
       </div>
     </footer>
   </body>

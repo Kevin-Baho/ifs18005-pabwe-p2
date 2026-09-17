@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog & Wawasan AI — NovaMind AI</title>
+    <meta name="description" content="Blog dan wawasan kecerdasan buatan dari DelAI Studio." />
+    <title>Blog &amp; Riset AI — DelAI Studio</title>
     <link rel="icon" href="assets/img/logo.png" type="image/png" />
 
     <!-- Bootstrap 5.3 CSS -->
@@ -20,7 +21,7 @@
     <style>
       body {
         font-family: system-ui, -apple-system, sans-serif;
-        color: #1e293b;
+        color: #0f172a;
       }
       .card-blog {
         transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -33,20 +34,29 @@
         height: 200px;
         object-fit: cover;
       }
+      /* Custom badge high contrast (WCAG 2 AA Compliant) */
+      .badge-ai-primary { background-color: #0369a1; color: #ffffff; }
+      .badge-ai-neutral { background-color: #334155; color: #ffffff; }
+      .badge-ai-success { background-color: #047857; color: #ffffff; }
+      .badge-ai-warning { background-color: #b45309; color: #ffffff; }
+      .badge-ai-danger  { background-color: #b91c1c; color: #ffffff; }
     </style>
   </head>
   <body class="bg-light">
-    <!-- NAVBAR (Bootstrap) -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
       <div class="container">
         <a class="navbar-brand fw-bold fs-4" href="index.html">
-          <i class="bi bi-cpu text-info me-1"></i>Nova<span class="text-info">Mind</span> AI
+          <i class="bi bi-cpu text-info me-1" aria-hidden="true"></i>DelAI<span class="text-info">Studio</span>
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navBlog"
+          aria-controls="navBlog"
+          aria-expanded="false"
+          aria-label="Buka navigasi menu"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -57,13 +67,13 @@
               <a class="nav-link" href="index.html">Landing Page</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="blog.html">Blog AI</a>
+              <a class="nav-link active" href="blog.html" aria-current="page">Blog AI</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="cv.html">Creator CV</a>
             </li>
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-info text-dark fw-semibold btn-sm px-3 rounded-pill" href="index.html#kontak">
+              <a class="btn btn-info text-dark fw-bold btn-sm px-3 rounded-pill" href="index.html#kontak">
                 Konsultasi
               </a>
             </li>
@@ -75,12 +85,12 @@
     <!-- HEADER BLOG -->
     <header class="bg-white border-bottom py-5">
       <div class="container text-center py-3">
-        <span class="badge text-bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3">
-          <i class="bi bi-journal-text me-1"></i> Artikel & Wawasan Industri
+        <span class="badge badge-ai-primary px-3 py-2 rounded-pill mb-3">
+          <i class="bi bi-journal-text me-1" aria-hidden="true"></i> Artikel &amp; Riset Terapan
         </span>
-        <h1 class="fw-bold display-5 mb-3">Riset & Panduan Rekayasa AI</h1>
-        <p class="lead text-secondary mx-auto" style="max-width: 650px;">
-          Pelajari implementasi praktis LLM, arsitektur RAG enterprise, etika machine learning, dan strategi otomasi cerdas.
+        <h1 class="fw-bold display-5 mb-3">Wawasan &amp; Rekayasa AI</h1>
+        <p class="lead text-dark mx-auto" style="max-width: 650px;">
+          Panduan praktis implementasi LLM enterprise, arsitektur RAG, etika kecerdasan buatan, dan studi kasus otomasi industri.
         </p>
       </div>
     </header>
@@ -95,12 +105,12 @@
               <img
                 src="https://images.unsplash.com/photo-1677442136019-21780efad99a?w=800&auto=format&fit=crop&q=60"
                 class="card-img-top blog-thumb"
-                alt="Arsitektur RAG"
+                alt="Arsitektur RAG Enterprise"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill">Generative AI</span>
-                  <span class="badge bg-secondary-subtle text-secondary px-3 py-1 rounded-pill">Enterprise RAG</span>
+                  <span class="badge badge-ai-primary px-3 py-1.5 rounded-pill">Generative AI</span>
+                  <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Enterprise RAG</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-none text-dark">
@@ -110,12 +120,12 @@
                 <p class="card-text text-secondary flex-grow-1">
                   Bagaimana teknik hybrid search dan reranking dapat meningkatkan akurasi retrieval dokumen teknis internal hingga 98%.
                 </p>
-                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-secondary small">
+                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-dark small fw-medium">
                   <div>
-                    <i class="bi bi-person-circle me-1"></i> Alex Rivera
+                    <i class="bi bi-person-circle text-primary me-1" aria-hidden="true"></i> Risky Kevin Naibaho
                   </div>
                   <div>
-                    <i class="bi bi-calendar3 me-1"></i> 14 Sep 2026 &bull; <i class="bi bi-clock me-1"></i> 6 min
+                    <i class="bi bi-calendar3 me-1" aria-hidden="true"></i> 14 Sep 2026 &bull; <i class="bi bi-clock me-1" aria-hidden="true"></i> 6 min
                   </div>
                 </div>
               </div>
@@ -128,12 +138,12 @@
               <img
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=60"
                 class="card-img-top blog-thumb"
-                alt="Computer Vision"
+                alt="Computer Vision Industri"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge bg-success-subtle text-success px-3 py-1 rounded-pill">Computer Vision</span>
-                  <span class="badge bg-secondary-subtle text-secondary px-3 py-1 rounded-pill">Manufaktur</span>
+                  <span class="badge badge-ai-success px-3 py-1.5 rounded-pill">Computer Vision</span>
+                  <span class="badge badge-ai-neutral px-3 py-1.5 rounded-pill">Manufaktur</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-none text-dark">
@@ -143,12 +153,12 @@
                 <p class="card-text text-secondary flex-grow-1">
                   Studi kasus pemanfaatan kamera edge computing untuk mendeteksi micro-defects material secara real-time dengan latensi sub-10ms.
                 </p>
-                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-secondary small">
+                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-dark small fw-medium">
                   <div>
-                    <i class="bi bi-person-circle me-1"></i> Maya Indriani
+                    <i class="bi bi-person-circle text-primary me-1" aria-hidden="true"></i> DelAI Research Team
                   </div>
                   <div>
-                    <i class="bi bi-calendar3 me-1"></i> 11 Sep 2026 &bull; <i class="bi bi-clock me-1"></i> 8 min
+                    <i class="bi bi-calendar3 me-1" aria-hidden="true"></i> 11 Sep 2026 &bull; <i class="bi bi-clock me-1" aria-hidden="true"></i> 8 min
                   </div>
                 </div>
               </div>
@@ -161,11 +171,11 @@
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60"
                 class="card-img-top blog-thumb"
-                alt="Data Intelligence"
+                alt="Analitik Prediktif Data"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge bg-warning-subtle text-warning px-3 py-1 rounded-pill">Predictive AI</span>
+                  <span class="badge badge-ai-warning px-3 py-1.5 rounded-pill">Predictive AI</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-none text-dark">
@@ -175,12 +185,12 @@
                 <p class="card-text text-secondary flex-grow-1">
                   Mendeteksi sinyal awal penurunan retensi pengguna fintech menggunakan model prediktif multi-variabel sebelum kehilangan profit.
                 </p>
-                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-secondary small">
+                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-dark small fw-medium">
                   <div>
-                    <i class="bi bi-person-circle me-1"></i> David Simorangkir
+                    <i class="bi bi-person-circle text-primary me-1" aria-hidden="true"></i> Risky Kevin Naibaho
                   </div>
                   <div>
-                    <i class="bi bi-calendar3 me-1"></i> 05 Sep 2026 &bull; <i class="bi bi-clock me-1"></i> 5 min
+                    <i class="bi bi-calendar3 me-1" aria-hidden="true"></i> 05 Sep 2026 &bull; <i class="bi bi-clock me-1" aria-hidden="true"></i> 5 min
                   </div>
                 </div>
               </div>
@@ -193,11 +203,11 @@
               <img
                 src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&auto=format&fit=crop&q=60"
                 class="card-img-top blog-thumb"
-                alt="AI Ethics & Governance"
+                alt="Tata Kelola Regulasi AI"
               />
               <div class="card-body p-4 d-flex flex-column">
                 <div class="mb-3">
-                  <span class="badge bg-danger-subtle text-danger px-3 py-1 rounded-pill">Tata Kelola & Etika</span>
+                  <span class="badge badge-ai-danger px-3 py-1.5 rounded-pill">Tata Kelola &amp; Etika</span>
                 </div>
                 <h2 class="card-title h4 fw-bold">
                   <a href="blog-detail.html" class="text-decoration-none text-dark">
@@ -205,14 +215,14 @@
                   </a>
                 </h2>
                 <p class="card-text text-secondary flex-grow-1">
-                  Langkah-langkah praktis menjaga pipeline data training tetap patuh standar hukum privasi global tanpa mengorbankan performa.
+                  Langkah-langkah praktis menjaga pipeline data training tetap patuh standar hukum privasi global tanpa mengorbankan performa model.
                 </p>
-                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-secondary small">
+                <div class="border-top pt-3 mt-3 d-flex justify-content-between align-items-center text-dark small fw-medium">
                   <div>
-                    <i class="bi bi-person-circle me-1"></i> Sarah Siregar
+                    <i class="bi bi-person-circle text-primary me-1" aria-hidden="true"></i> Tim Etika AI
                   </div>
                   <div>
-                    <i class="bi bi-calendar3 me-1"></i> 28 Agu 2026 &bull; <i class="bi bi-clock me-1"></i> 7 min
+                    <i class="bi bi-calendar3 me-1" aria-hidden="true"></i> 28 Agu 2026 &bull; <i class="bi bi-clock me-1" aria-hidden="true"></i> 7 min
                   </div>
                 </div>
               </div>
@@ -223,8 +233,8 @@
         <!-- Pagination -->
         <nav class="mt-5 d-flex justify-content-center" aria-label="Navigasi Halaman Blog">
           <ul class="pagination">
-            <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Sebelumnya</a></li>
+            <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">Berikutnya</a></li>
           </ul>
@@ -234,11 +244,11 @@
 
     <!-- FOOTER -->
     <footer class="bg-dark text-white py-4 mt-auto border-top border-secondary">
-      <div class="container text-center small text-secondary">
-        <p class="mb-1">© 2026 NovaMind AI Studio — Modul Praktikum Bootstrap 5.</p>
+      <div class="container text-center small text-light">
+        <p class="mb-1 text-light">© 2026 DelAI Studio &bull; Risky Kevin Naibaho &bull; Bootstrap 5 Module.</p>
         <div>
-          <a href="index.html" class="link-secondary text-decoration-none me-3">Landing Page</a>
-          <a href="cv.html" class="link-secondary text-decoration-none">CV Profil</a>
+          <a href="index.html" class="text-light text-decoration-none me-3">Landing Page</a>
+          <a href="cv.html" class="text-light text-decoration-none">CV Profil</a>
         </div>
       </div>
     </footer>

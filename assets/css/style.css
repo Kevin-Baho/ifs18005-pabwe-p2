@@ -1,23 +1,24 @@
 /* =========================================================
-   NOVAMIND AI - EXTERNAL STYLESHEET (Pure CSS)
+   DELAI STUDIO - EXTERNAL STYLESHEET (Pure CSS & WCAG Compliant)
    ========================================================= */
 
 :root {
-  --primary: #0284c7;
-  --primary-dark: #0369a1;
+  /* Sky 700 (#0369a1) menjamin rasio kontras > 4.5:1 terhadap putih & #f8fafc */
+  --primary: #0369a1;
+  --primary-dark: #075985;
   --primary-soft: #e0f2fe;
-  --accent: #6366f1;
+  --accent: #4338ca;
   --text-main: #0f172a;
-  --text-muted: #64748b;
+  --text-muted: #334155; /* Kontras tinggi > 4.5:1 */
   --bg-main: #ffffff;
   --bg-alt: #f8fafc;
-  --border-color: #e2e8f0;
+  --border-color: #cbd5e1;
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 10px 25px -3px rgba(15, 23, 42, 0.08);
-  --shadow-glow: 0 0 30px rgba(2, 132, 199, 0.25);
+  --shadow-glow: 0 0 30px rgba(3, 105, 161, 0.25);
   --container-max: 1180px;
   --font-display: "Outfit", sans-serif;
   --font-body: "Source Sans 3", sans-serif;
@@ -70,7 +71,7 @@ img {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
 }
@@ -128,7 +129,7 @@ img {
   padding: 10px 22px;
   font-family: var(--font-display);
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 999px;
   border: 1px solid transparent;
   cursor: pointer;
@@ -138,7 +139,7 @@ img {
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+  box-shadow: 0 4px 14px rgba(3, 105, 161, 0.3);
 }
 
 .btn-primary:hover {
@@ -162,8 +163,8 @@ img {
 /* --- HERO SECTION --- */
 .hero {
   padding-block: clamp(60px, 8vw, 110px);
-  background: radial-gradient(circle at top right, rgba(2, 132, 199, 0.1), transparent 50%),
-              radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.08), transparent 40%),
+  background: radial-gradient(circle at top right, rgba(3, 105, 161, 0.12), transparent 50%),
+              radial-gradient(circle at bottom left, rgba(67, 56, 202, 0.08), transparent 40%),
               #ffffff;
   overflow: hidden;
 }
@@ -184,7 +185,7 @@ img {
   background: var(--primary-soft);
   color: var(--primary-dark);
   font-size: 0.85rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
@@ -222,7 +223,7 @@ img {
   color: #f8fafc;
   box-shadow: var(--shadow-glow), var(--shadow-md);
   position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   transform: perspective(1000px) rotateY(-4deg) rotateX(2deg);
   transition: transform 0.4s ease;
 }
@@ -273,8 +274,8 @@ img {
 }
 
 .section-header .eyebrow {
-  color: var(--primary);
-  font-weight: 700;
+  color: var(--primary-dark);
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.85rem;
@@ -312,7 +313,7 @@ img {
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-md);
-  border-color: rgba(2, 132, 199, 0.4);
+  border-color: rgba(3, 105, 161, 0.5);
 }
 
 .service-icon {
@@ -320,7 +321,7 @@ img {
   height: 52px;
   border-radius: var(--radius-sm);
   background: var(--primary-soft);
-  color: var(--primary);
+  color: var(--primary-dark);
   display: grid;
   place-items: center;
   font-size: 1.5rem;
@@ -342,7 +343,7 @@ img {
 }
 
 .service-card a {
-  font-weight: 600;
+  font-weight: 700;
   color: var(--primary);
   display: inline-flex;
   align-items: center;
@@ -351,6 +352,7 @@ img {
 
 .service-card a:hover {
   gap: 8px;
+  color: var(--primary-dark);
 }
 
 /* --- ABOUT / WHY US --- */
@@ -375,7 +377,7 @@ img {
   margin-bottom: 6px;
 }
 
-.about-box h4 {
+.about-box h3 {
   font-size: 1.15rem;
   margin-bottom: 8px;
 }
@@ -408,7 +410,7 @@ img {
 }
 
 .form-group label {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   color: var(--text-main);
 }
@@ -437,7 +439,7 @@ img {
 /* --- FOOTER --- */
 .site-footer {
   background: #0f172a;
-  color: #94a3b8;
+  color: #cbd5e1;
   padding-top: 60px;
 }
 
@@ -455,12 +457,13 @@ img {
 }
 
 .footer-brand h3 span {
-  color: var(--primary);
+  color: #38bdf8;
 }
 
 .footer-brand p {
   max-width: 320px;
   font-size: 0.95rem;
+  color: #cbd5e1;
 }
 
 .footer-col h4 {
@@ -476,15 +479,20 @@ img {
   gap: 10px;
 }
 
+.footer-col a {
+  color: #cbd5e1;
+}
+
 .footer-col a:hover {
   color: #ffffff;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-block: 20px;
   text-align: center;
   font-size: 0.88rem;
+  color: #cbd5e1;
 }
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
